@@ -1,8 +1,6 @@
 # Build_KGs_entities
 
-This repository contains code to produce Knowledge Graphs from DBpedia or Wikidata.
-
-The [DBpedia_dataset.ipynb](https://github.com/mille-s/Build_KGs_entities/blob/e3c0239909daeca78f37b8e8b950a4cf7174d2ea/DBpedia_dataset.ipynb) notebook contains the following sections:
+The [DBpedia_dataset.ipynb](https://github.com/mille-s/Build_KGs_entities/blob/e3c0239909daeca78f37b8e8b950a4cf7174d2ea/DBpedia_dataset.ipynb) notebook contains code to produce Knowledge Graphs from DBpedia or Wikidata; it comprises the following sections:
 - **Preliminary work: get info to build datasets**: a series of cells to get information from DBpedia, such as which properties are currently used, what are the specifications of the Subject (Domain) and Object (Range) of the properties, what kind of hypernyms are used, etc.
 - **Build dataset**
   - **Get properties for list of entities**: given an input dictionary with category names (urls or name) as keys, and a list of entities (urls or names) as value, query DBpedia or Wikidata for each entity to get triples for which properties are covered in WebNLG. You can search for the entity as Subject of the property (e.g. country(Entity, Spain), or as object of the property (e.g. country(Barcelona, Entity), or for both cases. The process is time-consuming, so you can save the resulting data in a pickle file for later use.
