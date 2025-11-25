@@ -16,6 +16,7 @@ The [LongInput_D2T_25_EvalLLM_analysis.ipynb](https://github.com/mille-s/Build_K
 Get properties:
 - input_json_path = '/content/Build_KGs_entities/resources/GREC_NE.json'#@param{type:"string"}
 - triple_source = 'Ontology'
+- props_list_path = os.path.join('/content', 'DCU_TCD_FORGe_WebNLG23', 'code', 'sorted_properties.txt')
 - ignore_properties = ','.join(json.loads(open('/content/WikipediaPage_Generator/resources/list_props_to_filter.json', 'r').read()))
 - get_triples_where_entity_is_subj = True
 - get_triples_where_entity_is_obj = True
