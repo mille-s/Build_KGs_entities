@@ -10,3 +10,22 @@ The [DBpedia_dataset.ipynb](https://github.com/mille-s/Build_KGs_entities/blob/e
   - **Process output XMLs (group, etc.)**: Contains so far a cell to bring all XML files together.
  
 The [LongInput_D2T_25_EvalLLM_analysis.ipynb](https://github.com/mille-s/Build_KGs_entities/blob/e3c0239909daeca78f37b8e8b950a4cf7174d2ea/LongInput_D2T_25_EvalLLM_analysis.ipynb) notebook contains the code used to compute the results and analyses of the 2025 *Scaling Up Data-to-Text Generation to Longer Sequences* INLG paper.
+
+## Parameters for INLG 2025 paper:
+
+Get properties:
+- input_json_path = '/content/Build_KGs_entities/resources/GREC_NE.json'#@param{type:"string"}
+- triple_source = 'Ontology'
+- ignore_properties = ','.join(json.loads(open('/content/WikipediaPage_Generator/resources/list_props_to_filter.json', 'r').read()))
+- get_triples_where_entity_is_subj = True
+- get_triples_where_entity_is_obj = True
+- triple_Validation = "False" (added after paper publication)
+
+Build knowledge graphs:
+- min_num_of_instances_of_prop_desired = "3" (added after paper publication)
+- max_num_of_instances_of_prop_desired = "3"
+- min_input_size = "8"
+- max_input_size = "100"
+- properties_that_can_happen_once_only = json.loads(open('/content/WikipediaPage_Generator/resources/list_props_that_can_happen_once_only.json', 'r').read())
+- entities_for_dev = ['Abu_Dhabi', 'Accra', 'Islamabad', 'Lagos', 'Aneurin_Bevan', 'Anthony_Giddens', 'Antoine_Lavoisier', 'Antonio_Negri']
+
