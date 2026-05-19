@@ -11,4 +11,4 @@ List of resources in this repo:
 Resources added on 19th May
 - **entity-types.pickle** is a dictionary of entities in triples from the Top 10,000 articles, and their classes.
 - **properties.picke** is a dictionary of properties with their expected domain and range.
-- **** is a dictionary of superclasses for each class.
+- **superclasses.pickle** is a dictionary of superclasses for each class.
