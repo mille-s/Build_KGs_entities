@@ -7,3 +7,8 @@ List of resources in this repo:
 - the XMLs folder contains the output XML files produced using one of the *Save triple sets in XML format* cells, and the files described above.
 - **list_props_that_can_happen_once_only.json** contains all DBpedia properties that can happen only once for the same subject; it was compiled manually for the INLG 2025 "Scaling..." paper.
 - **list_props_to_filter.json** contains a list of properties that we do not want to use in our experiments, either because they correspond to metadata or because they have Object values that cannot be used in generation (e.g. a hyperlink); it was compiled manually for the INLG 2025 "Scaling..." paper.
+
+Resources added on 19th May
+- **entity-types.pickle** is a dictionary of entities in triples from the Top 10,000 articles, and their classes.
+- **properties.picke** is a dictionary of properties with their expected domain and range.
+- **** is a dictionary of superclasses for each class.
